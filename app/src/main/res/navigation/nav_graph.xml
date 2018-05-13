@@ -11,11 +11,24 @@
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_list_to_detail"
-            app:destination="@id/detailFragment" />
+            app:clearTask="false"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/flip_y"
+            app:launchDocument="false"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@animator/flip_x"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="de.dabotz.navigation.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="itemId"
+            android:defaultValue="0"
+            app:type="integer" />
+    </fragment>
 </navigation>
