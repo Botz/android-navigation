@@ -10,7 +10,7 @@
         android:label="fragment_list"
         tools:layout="@layout/fragment_list" >
         <action
-            android:id="@+id/action_list_to_detail"
+            android:id="@+id/detail"
             app:clearTask="false"
             app:destination="@id/detailFragment"
             app:enterAnim="@anim/nav_default_enter_anim"
