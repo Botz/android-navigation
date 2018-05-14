@@ -15,6 +15,9 @@
         <action
             android:id="@+id/secondActivity"
             app:destination="@id/main2Activity" />
+        <action
+            android:id="@+id/thirdActivity"
+            app:destination="@id/main3Activity" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -26,4 +29,9 @@
         android:name="de.dabotz.navigation.Main2Activity"
         android:label="activity_main2"
         tools:layout="@layout/activity_main2" />
+    <activity
+        android:id="@+id/main3Activity"
+        android:name="de.dabotz.navigation.Main3Activity"
+        android:label="activity_main3"
+        tools:layout="@layout/activity_main3" />
 </navigation>

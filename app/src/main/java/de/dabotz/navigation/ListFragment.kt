@@ -31,6 +31,9 @@ class ListFragment : Fragment() {
         main2ActivityButton.setOnClickListener {
             findNavController().navigate(R.id.secondActivity)
         }
+        main3ActivityButton.setOnClickListener {
+            findNavController().navigate(R.id.thirdActivity)
+        }
     }
 
     companion object {
