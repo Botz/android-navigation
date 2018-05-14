@@ -28,6 +28,9 @@ class ListFragment : Fragment() {
         detailButton.setOnClickListener {
             findNavController().navigate(R.id.action_list_to_detail)
         }
+        main2ActivityButton.setOnClickListener {
+            findNavController().navigate(R.id.secondActivity)
+        }
     }
 
     companion object {

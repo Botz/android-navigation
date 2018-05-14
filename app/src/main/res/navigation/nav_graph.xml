@@ -12,10 +12,18 @@
         <action
             android:id="@+id/action_list_to_detail"
             app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/secondActivity"
+            app:destination="@id/main2Activity" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
         android:name="de.dabotz.navigation.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <activity
+        android:id="@+id/main2Activity"
+        android:name="de.dabotz.navigation.Main2Activity"
+        android:label="activity_main2"
+        tools:layout="@layout/activity_main2" />
 </navigation>
